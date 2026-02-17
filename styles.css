@@ -1,0 +1,26 @@
+/* Minimal responsive styles for model portfolio landing */
+:root{--max-width:1200px;--accent:#e91e63;--dark:#111;--muted:#666}
+*{box-sizing:border-box}
+body{font-family:Inter,system-ui,Arial,sans-serif;color:var(--dark);margin:0;line-height:1.45}
+.container{max-width:var(--max-width);margin:0 auto;padding:1rem}
+.nav{display:flex;justify-content:space-between;align-items:center;padding:1rem 0}
+.nav .brand{font-weight:700}
+.nav-links{display:flex;gap:1rem;list-style:none;padding:0;margin:0}
+.nav-links a{text-decoration:none;color:inherit}
+.hero{background:linear-gradient(180deg,rgba(0,0,0,0.35),rgba(0,0,0,0.05)),#000;color:#fff;padding:4rem 0}
+.hero-content{display:flex;gap:2rem;align-items:center}
+.hero-left{flex:1}
+.hero-right{flex:1}
+.hero-right img{width:100%;height:auto;object-fit:cover;border-radius:8px}
+.btn{display:inline-block;padding:.65rem 1rem;border-radius:8px;text-decoration:none}
+.btn.primary{background:var(--accent);color:#fff}
+.btn.ghost{background:transparent;border:1px solid rgba(255,255,255,0.3);color:#fff}
+.section{padding:3rem 0}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+.card{background:#fff;padding:1rem;border-radius:8px}
+.booking form{display:flex;flex-direction:column;gap:1rem}
+.row{display:flex;gap:1rem}
+input,textarea{padding:.75rem;border:1px solid #ddd;border-radius:6px;width:100%}
+.footer{padding:2rem 0;text-align:center;color:var(--muted);background:#f8f8f8}
+@media(max-width:900px){.hero-content{flex-direction:column}.gallery{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:600px){.gallery{grid-template-columns:1fr}.row{flex-direction:column}}
