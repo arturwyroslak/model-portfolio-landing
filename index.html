@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Portfolio fotomodelki — sesje, bookingi, kontakty. Profesjonalne zdjęcia, cennik i formularz rezerwacji.">
+  <meta name="theme-color" content="#111827">
+
+  <title>Imię Nazwisko — Fotomodelka | Portfolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta property="og:title" content="Imię Nazwisko — Fotomodelka">
+  <meta property="og:description" content="Portfolio fotomodelki. Zobacz sesje, zarezerwuj termin, skontaktuj się.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="/assets/og/og-image.jpg">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container">
+      <a class="brand" href="#">Imię Nazwisko</a>
+      <ul class="nav-links">
+        <li><a href="#gallery">Portfolio</a></li>
+        <li><a href="#about">O mnie</a></li>
+        <li><a href="#services">Usługi</a></li>
+        <li><a href="#contact">Kontakt</a></li>
+      </ul>
+      <a class="cta" href="#booking">Bookuj</a>
+      <button class="nav-toggle" aria-label="Otwórz menu">☰</button>
+    </nav>
+
+    <section class="hero container" id="home">
+      <div class="hero-left">
+        <h1 class="hero-title">Fotomodelka specjalizująca się w modzie i kampaniach</h1>
+        <p class="hero-sub">Profesjonalne sesje studyjne i plenerowe. Współpraca z agencjami i markami.</p>
+        <div class="hero-cta">
+          <a class="btn primary" href="#booking">Zarezerwuj sesję</a>
+          <a class="btn ghost" href="#gallery">Zobacz portfolio</a>
+        </div>
+        <ul class="hero-stats">
+          <li><strong>120+</strong><span>Sesji</span></li>
+          <li><strong>30+</strong><span>Kampanii</span></li>
+          <li><strong>15k</strong><span>Social</span></li>
+        </ul>
+      </div>
+      <div class="hero-right">
+        <div class="hero-carousel" aria-roledescription="carousel" aria-label="Galeria zdjęć">
+          <button class="carousel-prev" aria-label="Poprzednie">‹</button>
+          <div class="carousel-track">
+            <img src="/assets/img/hero-1.jpg" alt="Modelka - sesja 1" loading="lazy">
+            <img src="/assets/img/hero-2.jpg" alt="Modelka - sesja 2" loading="lazy">
+            <img src="/assets/img/hero-3.jpg" alt="Modelka - sesja 3" loading="lazy">
+          </div>
+          <button class="carousel-next" aria-label="Następne">›</button>
+        </div>
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <section id="gallery" class="section container">
+      <header class="section-header">
+        <h2>Portfolio</h2>
+        <p>Wybór najlepszych sesji — moda, beauty, komercyjna.</p>
+      </header>
+
+      <div class="masonry" role="list">
+        <figure class="masonry-item" role="listitem" data-category="fashion"><img src="/assets/img/gal-1.jpg" alt="Sesja 1" loading="lazy"></figure>
+        <figure class="masonry-item" role="listitem" data-category="beauty"><img src="/assets/img/gal-2.jpg" alt="Sesja 2" loading="lazy"></figure>
+        <figure class="masonry-item" role="listitem" data-category="commercial"><img src="/assets/img/gal-3.jpg" alt="Sesja 3" loading="lazy"></figure>
+        <figure class="masonry-item" role="listitem" data-category="fashion"><img src="/assets/img/gal-4.jpg" alt="Sesja 4" loading="lazy"></figure>
+        <figure class="masonry-item" role="listitem" data-category="beauty"><img src="/assets/img/gal-5.jpg" alt="Sesja 5" loading="lazy"></figure>
+        <figure class="masonry-item" role="listitem" data-category="commercial"><img src="/assets/img/gal-6.jpg" alt="Sesja 6" loading="lazy"></figure>
+      </div>
+
+      <div class="gallery-controls">
+        <button id="filter-all" class="btn small active">Wszystkie</button>
+        <button id="filter-fashion" class="btn small">Moda</button>
+        <button id="filter-beauty" class="btn small">Beauty</button>
+        <button id="filter-commercial" class="btn small">Komercyjne</button>
+      </div>
+    </section>
+
+    <section id="about" class="section container">
+      <div class="about-grid">
+        <div>
+          <h2>O mnie</h2>
+          <p>Jestem zawodową fotomodelką z doświadczeniem w kampaniach modowych i komercyjnych. Współpracuję z fotografami, stylistami i agencjami, oferując profesjonalne podejście do każdego projektu.</p>
+          <ul class="skills">
+            <li>Fotomodelka - moda</li>
+            <li>Beauty & commercial</li>
+            <li>Runway & editorial</li>
+          </ul>
+        </div>
+        <aside>
+          <img src="/assets/img/about.jpg" alt="Zdjęcie o mnie" loading="lazy">
+        </aside>
+      </div>
+    </section>
+
+    <section id="services" class="section container">
+      <header class="section-header">
+        <h2>Usługi</h2>
+        <p>Sesje studyjne, kampanie reklamowe, lookbooki i współprace brandowe.</p>
+      </header>
+
+      <div class="cards">
+        <article class="card">
+          <h3>Sesja studyjna</h3>
+          <p>Profesjonalne zdjęcia studyjne. Make-up team on request.</p>
+          <p class="price">od 800 PLN</p>
+        </article>
+        <article class="card">
+          <h3>Plener / Concept</h3>
+          <p>Sesje w plenerze, kreatywne koncepty i rekwizyty.</p>
+          <p class="price">od 1000 PLN</p>
+        </article>
+        <article class="card">
+          <h3>Kampanie i lookbooki</h3>
+          <p>Pełne wsparcie przy kampaniach — doświadczenie przy realizacjach komercyjnych.</p>
+          <p class="price">wycena indywidualna</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="booking" class="section container booking">
+      <header class="section-header">
+        <h2>Zarezerwuj termin</h2>
+        <p>Szybki formularz i przybliżona dostępność. Potwierdzenie e-mail w ciągu 48 godzin.</p>
+      </header>
+
+      <form id="booking-form" class="form-grid" action="#" method="POST" novalidate>
+        <label for="name">Imię i nazwisko</label>
+        <input id="name" name="name" required>
+
+        <label for="email">E-mail</label>
+        <input id="email" name="email" type="email" required>
+
+        <label for="service">Usługa</label>
+        <select id="service" name="service">
+          <option>Sesja studyjna</option>
+          <option>Plener / Concept</option>
+          <option>Kampania</option>
+        </select>
+
+        <label for="date">Preferowana data</label>
+        <input id="date" name="date" type="date">
+
+        <label for="message">Wiadomość</label>
+        <textarea id="message" name="message" rows="4"></textarea>
+
+        <button class="btn primary" type="submit">Wyślij zapytanie</button>
+      </form>
+      <p class="note">Formularz wysyła wiadomość lokalnie (placeholder). Podłącz funkcję serverless (Netlify/AWS) aby otrzymywać e-maile.</p>
+    </section>
+
+    <section id="contact" class="section container contact">
+      <h2>Kontakt</h2>
+      <p>Email: <a href="mailto:kontakt@przyklad.pl">kontakt@przyklad.pl</a></p>
+      <p>Instagram: <a href="#">@twoj_instagram</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Imię Nazwisko. Wszystkie prawa zastrzeżone.</p>
+      <nav class="footer-nav">
+        <a href="#privacy">Polityka prywatności</a>
+        <a href="#terms">Regulamin</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="/assets/js/main.js" defer></script>
+</body>
+</html>
